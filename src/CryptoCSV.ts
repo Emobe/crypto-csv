@@ -9,7 +9,7 @@ export default class CryptoCSV {
   async run(args: typeof CryptoCSVArguments): Promise<void> {
     try {
       const data = await this.scraper.get(args.exchange, args.pair, args.timeframe)
-      this.csvCreator.create(args.filename, data)
+      this.csvCreator.create(args.output, data)
     } catch (err) {
       console.error(err)
     }

@@ -8,17 +8,17 @@ export default yargs.option('exchange', {
 }).option('pair', {
   alias: 'p',
   demandOption: true,
-  description: 'The cryptocurrency pair to retrieve from',
+  description: 'Cryptocurrency pair to retrieve from',
   type: 'string'
 })
 .option('timeframe', {
   alias: 't',
   demandOption: true,
-  description: 'The timeframe to retrieve from',
+  description: 'Timeframe to retrieve data from',
   type: 'string'
-}).option('filename', {
-  alias: 'n',
-  description: 'The filename to save the csv as',
+}).option('output', {
+  alias: 'o',
+  description: 'Path to save the .csv file',
   demandOption: false,
   type: 'string'
 }).
