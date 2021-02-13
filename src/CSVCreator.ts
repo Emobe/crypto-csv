@@ -2,7 +2,7 @@ import * as csvwriter from 'csv-writer'
 import * as ccxt from 'ccxt'
 
 export default class CSVCreator {
-  private headers: string[] = ['Date', 'Open', 'High', 'Low', 'Close', 'Volume']
+  private headers: string[] = ['date', 'open', 'high', 'low', 'close', 'volume']
 
   async create(name: string, series: ccxt.OHLCV[]): Promise<void> {
     try {
